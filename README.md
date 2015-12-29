@@ -24,7 +24,7 @@ To be able to ping Windows PCs by Name:
 sudo apt-get update
 sudo apt-get install winbind
 sudo apt-get install libnss-winbind
-sudo vim /etc/nsswitch and append 'wins' after 'files''
+sudo vi /etc/nsswitch and append 'wins' after 'files''
 ```
 
 To be able to run 'ping' without sudo
@@ -35,3 +35,16 @@ For some reason Ping would only with the latest Raspbian
 Install xrdp for remote desktop
 -------------------------------
 `sudo apt-get install xrdp`
+
+Alias vi to vim 
+---------------
+Habit - use 'vim' all the time so save my sanity I alias vim to vi
+`vi ~.bashrc`
+Add `alias vim="vi"`
+
+Change Hostname from default `raspberrypi`
+----------------------------------
+Launch the raspi-config utility
+`sudo raspi-config`
+Select *Advanced Options*, then *Hostname*
+_Note any characters after period '.' are ignored - so 'rpi2.02' was treated as 'rpi2' whereas 'rpi2-01' was fine_
