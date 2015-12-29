@@ -48,6 +48,7 @@ Launch the raspi-config utility
 `sudo raspi-config`
 Select *Advanced Options*, then *Hostname*
 _Note any characters after period '.' are ignored - so 'rpi2.02' was treated as 'rpi2' whereas 'rpi2-01' was fine_
+_*Make sure you've made a note of the new hostname*_
 
 ##Change the password for the *pi* default user
 Launch the raspi-config utility
