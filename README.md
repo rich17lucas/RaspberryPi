@@ -29,7 +29,7 @@ sudo vi /etc/nsswitch and append 'wins' after 'files''
 
 To be able to run 'ping' without sudo
 -------------------------------------
-For some reason Ping would only with the latest Raspbian 
+For some reason Ping would only with the latest Raspbian (installed December 2015)
 `chmod 4755 /bin/ping`
 
 Install xrdp for remote desktop
@@ -48,3 +48,9 @@ Launch the raspi-config utility
 `sudo raspi-config`
 Select *Advanced Options*, then *Hostname*
 _Note any characters after period '.' are ignored - so 'rpi2.02' was treated as 'rpi2' whereas 'rpi2-01' was fine_
+
+##Change the password for the *pi* default user
+Launch the raspi-config utility
+`sudo raspi-config`
+Option 2 - Change User Password
+This will drop you out to the terminal session prompting you for a new password.
