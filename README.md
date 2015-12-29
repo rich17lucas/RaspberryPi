@@ -7,21 +7,23 @@ To be able to connect to Wifi, enable the the WLAN0 interface if not enabled by 
 
 Open the wpa-supplicant configuration file in a text editor (vi or Nano):
 
-`&vi /etc/wpa_supplicant/wpa_supplicant.conf`
+`vi /etc/wpa_supplicant/wpa_supplicant.conf`
 
 Go to the bottom of the file and add the following:
 
-`network={
+```network={`
     ssid="The_ESSID_from_earlier"
     psk="Your_wifi_password"
-}`
+}
+```
 
 To be able to ping Windows PCs by Name:
 ---------------------------------------
-'sudo apt-get update
+```sudo apt-get update
 sudo apt-get install winbind
 sudo apt-get install libnss-winbind
 sudo vim /etc/nsswitch and append 'wins' after 'files''
+```
 
 To be able to run 'ping' without sudo
 -------------------------------------
