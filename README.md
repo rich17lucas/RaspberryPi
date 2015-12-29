@@ -11,7 +11,8 @@ Open the wpa-supplicant configuration file in a text editor (vi or Nano):
 
 Go to the bottom of the file and add the following:
 
-```network={`
+```
+network={`
     ssid="The_ESSID_from_earlier"
     psk="Your_wifi_password"
 }
@@ -19,7 +20,8 @@ Go to the bottom of the file and add the following:
 
 To be able to ping Windows PCs by Name:
 ---------------------------------------
-```sudo apt-get update
+```
+sudo apt-get update
 sudo apt-get install winbind
 sudo apt-get install libnss-winbind
 sudo vim /etc/nsswitch and append 'wins' after 'files''
